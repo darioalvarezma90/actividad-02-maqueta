@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="container page-intro">
+    <h1>Nuestros servicios</h1>
+    <p class="lead">Proponemos entregables definidos, revisión entre pares y criterios de aceptación acordados desde el
+        inicio.</p>
+</section>
+<section class="container service-details" aria-label="Servicios propuestos">
+    {% for number,title,description,items in [
+    ('01','Documentos accesibles','Hacer que la información se pueda leer, recorrer y comprender.', ['Estructura de
+    encabezados y orden de lectura.','Revisión de contraste y alternativas para imágenes.','Adecuación de documentos
+    Word, PowerPoint y PDF.']),
+    ('02','Pruebas de accesibilidad','Encontrar obstáculos en tareas concretas de un sitio o formulario.', ['Recorridos
+    mediante teclado y lector de pantalla.','Revisión de etiquetas, instrucciones y mensajes de error.','Reporte de
+    hallazgos y recomendaciones de mejora.']),
+    ('03','Control de calidad digital','Información confiable para los procesos de cada organización.', ['Captura y
+    organización con reglas acordadas.','Verificación de integridad y consistencia.','Revisión entre pares antes de
+    entregar.']),
+    ('04','Capacitación a organizaciones','Construir habilidades para prevenir barreras desde el diseño.', ['Talleres
+    con ejemplos de trabajo cotidiano.','Prácticas de contenido y documentos accesibles.','Guías de revisión para los
+    equipos.'])] %}
+    <article class="detail-row"><span class="card-number">{{ number }}</span>
+        <div>
+            <h2>{{ title }}</h2>
+            <p>{{ description }}</p>
+        </div>
+        <ul>{% for item in items %}<li>{{ item }}</li>{% endfor %}</ul>
+    </article>
+    {% endfor %}
+</section>
+<section class="container section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">UNA FORMA CLARA DE COLABORAR</p>
+            <h2>Del diagnóstico a la entrega.</h2>
+        </div>
+    </div>
+    <ol class="process-grid">
+        <li>
+            <h3>Acordar</h3>
+            <p>Identificar necesidades, alcance y criterios de aceptación.</p>
+        </li>
+        <li>
+            <h3>Trabajar</h3>
+            <p>Preparar el entregable con procedimientos y herramientas accesibles.</p>
+        </li>
+        <li>
+            <h3>Verificar</h3>
+            <p>Revisar resultados y documentar las mejoras realizadas.</p>
+        </li>
+    </ol><a class="button" href="/contacto">Consultar información</a>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="container page-intro">
+    <h1>Contacto y preguntas frecuentes</h1>
+    <p class="lead">Encuentra respuestas sobre los servicios y las oportunidades que propone IncluTech.</p>
+</section>
+<section class="container contact-layout">
+    <div class="blue-block">
+        <h2>En desarrollo.</h2>
+        <p>IncluTech es un proyecto escolar (de momento). Todavía no dispone de correo, teléfono o equipo de atención
+            comercial.</p>
+        <p>En una operación real se ofrecerían distintos medios de contacto para que cada persona eligiera cómo
+            participar.</p><a class="button button-light" href="/oportunidades#postulacion">Probar el formulario</a>
+    </div>
+    <div class="faq">
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+            <summary>¿Puedo contratar un servicio?</summary>
+            <p>Esta versión presenta los servicios propuestos. No procesa solicitudes comerciales ni pagos.</p><a
+                href="/servicios">Consultar el alcance de los servicios</a>
+        </details>
+        <details>
+            <summary>¿Hay vacantes disponibles?</summary>
+            <p>No hay vacantes activas. Puedes explorar el proceso y completar una postulación de ejemplo sin usar
+                información personal.</p>
+        </details>
+        <details>
+            <summary>¿Necesito experiencia en accesibilidad?</summary>
+            <p>El modelo contempla capacitación vinculada con las funciones del puesto. La selección propuesta considera
+                competencias, intereses y posibilidades de aprendizaje.</p>
+        </details>
+        <details>
+            <summary>¿Cómo puedo navegar sin ratón?</summary>
+            <p>Usa Tab para avanzar, Mayús + Tab para retroceder y Enter para activar enlaces. En los controles nativos
+                también puedes usar las flechas y la barra espaciadora según corresponda.</p><a
+                href="/accesibilidad">Consultar las características de accesibilidad</a>
+        </details>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="container page-intro">
+  <h1>Trabaja con nosotros</h1>
+  <p class="lead">Explora una propuesta de incorporación que considera tus intereses, tus habilidades y las condiciones
+    que necesitas para participar.</p>
+</section>
+<section class="container application-layout">
+  <div>
+    <h2>Una incorporación contigo.</h2>
+    <ol class="vertical-process">
+      <li>
+        <h3>Conocer tus intereses</h3>
+        <p>Identificar el área en la que te gustaría aprender o aportar.</p>
+      </li>
+      <li>
+        <h3>Mostrar tus habilidades</h3>
+        <p>Realizar ejercicios relacionados con el trabajo, con criterios conocidos.</p>
+      </li>
+      <li>
+        <h3>Acordar los apoyos</h3>
+        <p>Revisar las herramientas y modalidades de participación.</p>
+      </li>
+      <li>
+        <h3>Aprender y avanzar</h3>
+        <p>Recibir capacitación, acompañamiento y retroalimentación.</p>
+      </li>
+    </ol>
+    <div class="note"><strong>Sobre las oportunidades</strong>
+      <p>Son ejemplos del modelo de negocio. Esta maqueta no ofrece vacantes activas ni solicita diagnósticos o
+        documentos personales.</p>
+    </div>
+  </div>
+  <div class="form-card" id="postulacion">
+    {% if success %}
+    <div class="success-message" role="status">
+      <p class="eyebrow">RECORRIDO COMPLETADO</p>
+      <h2 tabindex="-1" data-focus-result>Has completado la demostración.</h2>
+      <p>El formulario se validó correctamente. No se guardó una candidatura ni se envió información a un equipo de
+        contratación.</p>
+    </div>
+    <dl class="summary">
+      <dt>Área elegida</dt>
+      <dd>{{ profiles[values.perfil] }}</dd>
+      <dt>Modalidad</dt>
+      <dd>{{ {'remota':'Remota','hibrida':'Híbrida','cualquiera':'Cualquiera de las anteriores'}[values.modalidad] }}
+      </dd>
+    </dl><a class="button" href="/oportunidades#postulacion">Probar otra vez</a><a class="text-link form-back"
+      href="/">Volver al inicio</a>
+    {% else %}
+    <p class="eyebrow">PRUEBA EL RECORRIDO</p>
+    <h2>Postulación de ejemplo</h2>
+    <p id="demo-help">Usa un nombre ficticio. Los datos se procesan para mostrar el resultado, pero no se guardan ni se
+      envían a terceros.</p>
+    <p class="required-note">Los tres campos son obligatorios.</p>
+    {% if errors %}<div class="error-summary" role="alert" tabindex="-1" data-focus-result>
+      <h3>Revisa estos campos para continuar</h3>
+      <ul>{% for field,message in errors.items() %}<li><a href="#{{ field }}">{{ message }}</a></li>{% endfor %}</ul>
+    </div>{% endif %}
+    <form action="/oportunidades#postulacion" method="post" novalidate aria-describedby="demo-help">
+      <div class="field"><label for="nombre">Nombre de ejemplo</label>
+        <p id="nombre-help" class="field-help">Entre 2 y 60 caracteres. Por ejemplo: Alex.</p><input id="nombre"
+          name="nombre" type="text" required minlength="2" maxlength="60" autocomplete="off"
+          value="{{ values.get('nombre','') }}"
+          aria-describedby="nombre-help{% if errors.nombre %} nombre-error{% endif %}" {% if errors.nombre
+          %}aria-invalid="true" {% endif %}>{% if errors.nombre %}<p id="nombre-error" class="field-error">Error: {{
+          errors.nombre }}</p>{% endif %}
+      </div>
+      <div class="field"><label for="perfil">Área de interés</label><select id="perfil" name="perfil" required {% if
+          errors.perfil %}aria-invalid="true" aria-describedby="perfil-error" {% endif %}>
+          <option value="">Selecciona un área</option>{% for key,label in profiles.items() %}<option value="{{ key }}"
+            {% if values.get('perfil')==key %}selected{% endif %}>{{ label }}</option>{% endfor %}
+        </select>{% if errors.perfil %}<p id="perfil-error" class="field-error">Error: {{ errors.perfil }}</p>{% endif
+        %}</div>
+      <div class="field"><label for="modalidad">Modalidad de participación</label><select id="modalidad"
+          name="modalidad" required {% if errors.modalidad %}aria-invalid="true" aria-describedby="modalidad-error" {%
+          endif %}>
+          <option value="">Selecciona una modalidad</option>{% for key,label in
+          [('remota','Remota'),('hibrida','Híbrida'),('cualquiera','Cualquiera de las anteriores')] %}<option
+            value="{{ key }}" {% if values.get('modalidad')==key %}selected{% endif %}>{{ label }}</option>{% endfor %}
+        </select>{% if errors.modalidad %}<p id="modalidad-error" class="field-error">Error: {{ errors.modalidad }}</p>
+        {% endif %}</div>
+      <button class="button" type="submit">Probar postulación <span aria-hidden="true">→</span></button>
+    </form>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

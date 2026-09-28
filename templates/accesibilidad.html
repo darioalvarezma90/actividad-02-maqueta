@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="container page-intro">
+    <h1>Accesibilidad del sitio</h1>
+    <p class="lead">Diseñamos esta propuesta a partir de los cuatro principios POUR: perceptible, operable, comprensible
+        y robusto.</p>
+</section>
+<section class="container service-details" aria-label="Aplicación de POUR">
+    <article class="detail-row"><span class="letter">P</span>
+        <div>
+            <h2>Perceptible</h2>
+            <p>La información puede reconocerse y adaptarse.</p>
+        </div>
+        <ul>
+            <li>Texto real que admite ampliación en el navegador.</li>
+            <li>Colores de texto y fondo con contraste.</li>
+            <li>Los errores incluyen texto y no dependen solo del color.</li>
+        </ul>
+    </article>
+    <article class="detail-row"><span class="letter">O</span>
+        <div>
+            <h2>Operable</h2>
+            <p>La navegación permite usar el teclado.</p>
+        </div>
+        <ul>
+            <li>Enlace inicial para saltar al contenido.</li>
+            <li>Indicador visible en el elemento que tiene el foco.</li>
+            <li>Controles nativos y ausencia de límites de tiempo.</li>
+        </ul>
+    </article>
+    <article class="detail-row"><span class="letter">U</span>
+        <div>
+            <h2>Comprensible</h2>
+            <p>Las instrucciones ayudan a completar cada paso.</p>
+        </div>
+        <ul>
+            <li>Navegación y nombres consistentes entre páginas.</li>
+            <li>Etiquetas, ejemplos y campos obligatorios identificados.</li>
+            <li>Resumen de errores con enlaces a los campos y conservación de las respuestas.</li>
+        </ul>
+    </article>
+    <article class="detail-row"><span class="letter">R</span>
+        <div>
+            <h2>Robusto</h2>
+            <p>La estructura comunica el propósito del contenido.</p>
+        </div>
+        <ul>
+            <li>Idioma español declarado y encabezados organizados.</li>
+            <li>Regiones de navegación, contenido y pie de página.</li>
+            <li>Etiquetas y mensajes asociados a los campos. El formulario funciona sin JavaScript.</li>
+        </ul>
+    </article>
+</section>
+<section class="container section reading">
+    <h2>Alcance de esta propuesta</h2>
+    <p>Estas características son decisiones de diseño, no una certificación de conformidad. La evaluación debe incluir
+        pruebas manuales y la participación de personas con diferentes necesidades de acceso.</p>
+    <h2>Para utilizar el sitio</h2>
+    <p>Puedes ampliar el contenido con los controles de zoom de tu navegador. Usa Tab para recorrer los enlaces y
+        campos. El primer enlace permite saltar directamente al contenido de cada página.</p>
+    <h2>Fuentes de consulta</h2>
+    <ul class="source-list">
+        <li><a
+                href="https://blog.adobe.com/en/publish/2017/11/24/design-with-accessibility-in-mind-the-pour-methodology">Andrew
+                Smyk (2017). Design With Accessibility in Mind: The POUR Methodology.</a></li>
+        <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/">W3C WAI. Principios de
+                accesibilidad.</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG22/">W3C. Web Content Accessibility Guidelines (WCAG) 2.2.</a></li>
+    </ul>
+</section>
+{% endblock %}
