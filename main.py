@@ -21,6 +21,7 @@ PAGES = {
     "/contacto": ("contacto", "Contacto"),
     "/accesibilidad": ("accesibilidad", "Accesibilidad"),
 }
+
 PROFILES = {
     "documentos": "Documentos accesibles",
     "pruebas": "Pruebas de accesibilidad",
@@ -96,5 +97,4 @@ async def not_found(request: Request, exc):
 
 if __name__ == "__main__":
     import uvicorn
-
     uvicorn.run(app, host=HOST, port=PORT, log_level=LOG_LEVEL)

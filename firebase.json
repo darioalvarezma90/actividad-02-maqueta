@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "assets",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "inclutech-api",
+          "region": "us-central1"
+        }
+      }
+    ]
+  }
+}

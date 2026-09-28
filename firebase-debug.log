@@ -1,0 +1,158 @@
+[debug] [2026-09-28T00:24:13.655Z] ----------------------------------------------------------------------
+[debug] [2026-09-28T00:24:13.657Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vidaa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2026-09-28T00:24:13.657Z] CLI Version:   15.31.0
+[debug] [2026-09-28T00:24:13.657Z] Platform:      win32
+[debug] [2026-09-28T00:24:13.657Z] Node Version:  v24.21.0
+[debug] [2026-09-28T00:24:13.657Z] Detected Agent: unknown
+[debug] [2026-09-28T00:24:13.657Z] Time:          Sun Sep 27 2026 18:24:13 GMT-0600 (Central Standard Time)
+[debug] [2026-09-28T00:24:13.657Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\vidaa\Documents\GitHub\personal\actividad-02-maqueta
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2026-09-28T00:24:53.345Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-28T00:24:53.345Z] > authorizing via signed-in user (vidaalhe90@gmail.com)
+[debug] [2026-09-28T00:25:56.013Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:25:56.013Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:25:56.015Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-09-28T00:25:56.015Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"actividad-02"}
+[debug] [2026-09-28T00:25:56.484Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-09-28T00:25:56.484Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"actividad-02-2aaa7"}
+[debug] [2026-09-28T00:26:06.811Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:06.811Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:06.812Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-09-28T00:26:06.812Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"actividad-02"}
+[debug] [2026-09-28T00:26:07.178Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-09-28T00:26:07.178Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"actividad-02-c32ef"}
+[debug] [2026-09-28T00:26:17.160Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:17.160Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:17.161Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-09-28T00:26:17.161Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"actividad02001"}
+[debug] [2026-09-28T00:26:17.475Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-09-28T00:26:17.476Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"actividad02001"}
+[debug] [2026-09-28T00:26:36.538Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:36.538Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:36.538Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2026-09-28T00:26:36.538Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"actividad02001","name":"actividad02001"}
+[debug] [2026-09-28T00:26:37.081Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2026-09-28T00:26:37.082Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.7896688312007596686"}
+[debug] [2026-09-28T00:26:37.082Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:37.082Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:37.082Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 [none]
+[debug] [2026-09-28T00:26:37.363Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 200
+[debug] [2026-09-28T00:26:37.363Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 {"name":"operations/create_project.global.7896688312007596686"}
+[debug] [2026-09-28T00:26:37.873Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:37.874Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:37.874Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:37.874Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 [none]
+[debug] [2026-09-28T00:26:38.045Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 200
+[debug] [2026-09-28T00:26:38.045Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 {"name":"operations/create_project.global.7896688312007596686"}
+[debug] [2026-09-28T00:26:39.058Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:39.058Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:39.058Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:39.058Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 [none]
+[debug] [2026-09-28T00:26:39.175Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 200
+[debug] [2026-09-28T00:26:39.176Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 {"name":"operations/create_project.global.7896688312007596686"}
+[debug] [2026-09-28T00:26:41.190Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:41.191Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:41.191Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:41.191Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 [none]
+[debug] [2026-09-28T00:26:41.313Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 200
+[debug] [2026-09-28T00:26:41.313Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.7896688312007596686 {"name":"operations/create_project.global.7896688312007596686","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"448213648542","projectId":"actividad02001","lifecycleState":"ACTIVE","name":"actividad02001","createTime":"2026-09-28T00:26:39.194Z"}}
+[debug] [2026-09-28T00:26:41.314Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:41.314Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:41.314Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/actividad02001:addFirebase [none]
+[debug] [2026-09-28T00:26:43.730Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/actividad02001:addFirebase 200
+[debug] [2026-09-28T00:26:43.730Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/actividad02001:addFirebase {"name":"operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5"}
+[debug] [2026-09-28T00:26:43.731Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:43.731Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:43.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 [none]
+[debug] [2026-09-28T00:26:47.500Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 200
+[debug] [2026-09-28T00:26:47.500Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 {"name":"operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5"}
+[debug] [2026-09-28T00:26:48.003Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:48.004Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:48.004Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:48.004Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 [none]
+[debug] [2026-09-28T00:26:48.431Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 200
+[debug] [2026-09-28T00:26:48.431Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 {"name":"operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5"}
+[debug] [2026-09-28T00:26:49.436Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:49.437Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:49.437Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:49.437Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 [none]
+[debug] [2026-09-28T00:26:49.978Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 200
+[debug] [2026-09-28T00:26:49.978Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 {"name":"operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5"}
+[debug] [2026-09-28T00:26:51.984Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:51.985Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:51.985Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:51.985Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 [none]
+[debug] [2026-09-28T00:26:54.190Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 200
+[debug] [2026-09-28T00:26:54.190Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 {"name":"operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5"}
+[debug] [2026-09-28T00:26:58.191Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-09-28T00:26:58.191Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:58.191Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:58.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 [none]
+[debug] [2026-09-28T00:26:58.746Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 200
+[debug] [2026-09-28T00:26:58.746Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5 {"name":"operations/workflows/NmJlZjAwMzAtNTRhMy00YjFiLTgzMzUtMGJiMmI4ZTEyMDY5","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"actividad02001","projectNumber":"448213648542","displayName":"actividad02001","name":"projects/actividad02001","resources":{"hostingSite":"actividad02001"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: actividad02001
+[info]    - Project Name: actividad02001
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/actividad02001/overview
+[info] 
+=== Functions Setup
+[debug] [2026-09-28T00:26:58.761Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-28T00:26:58.762Z] > authorizing via signed-in user (vidaalhe90@gmail.com)
+[debug] [2026-09-28T00:26:58.762Z] [iam] checking project actividad02001 for permissions ["firebase.projects.get"]
+[debug] [2026-09-28T00:26:58.762Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:58.762Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:58.762Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/actividad02001:testIamPermissions [none]
+[debug] [2026-09-28T00:26:58.762Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/actividad02001:testIamPermissions  x-goog-user-project=actividad02001
+[debug] [2026-09-28T00:26:58.762Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/actividad02001:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-09-28T00:26:59.251Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/actividad02001:testIamPermissions 200
+[debug] [2026-09-28T00:26:59.251Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/actividad02001:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-09-28T00:26:59.252Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:59.252Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:59.252Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:59.252Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:26:59.252Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-09-28T00:26:59.252Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com  x-goog-user-project=actividad02001
+[debug] [2026-09-28T00:26:59.253Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/runtimeconfig.googleapis.com [none]
+[debug] [2026-09-28T00:26:59.253Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/runtimeconfig.googleapis.com  x-goog-user-project=actividad02001
+[debug] [2026-09-28T00:27:00.588Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/runtimeconfig.googleapis.com 200
+[debug] [2026-09-28T00:27:00.588Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2026-09-28T00:27:00.603Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com 200
+[debug] [2026-09-28T00:27:00.603Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-09-28T00:27:00.603Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:27:00.603Z] Checked if tokens are valid: true, expires at: 1790558633018
+[debug] [2026-09-28T00:27:00.603Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2026-09-28T00:27:00.603Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com:enable  x-goog-user-project=actividad02001
+[debug] [2026-09-28T00:27:01.599Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2026-09-28T00:27:01.600Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/actividad02001/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
