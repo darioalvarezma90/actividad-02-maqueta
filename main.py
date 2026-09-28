@@ -10,7 +10,7 @@ from settings import BASE_DIR, HOST, PORT, LOG_LEVEL
 
 BASE = BASE_DIR
 app = FastAPI(title="IncluTech", docs_url=None, redoc_url=None, openapi_url=None)
-app.mount("/assets", StaticFiles(directory=BASE / "assets"), name="assets")
+app.mount("/assets", StaticFiles(directory=BASE / "public" / "assets"), name="assets")
 templates = Jinja2Templates(directory=BASE / "templates")
 
 PAGES = {

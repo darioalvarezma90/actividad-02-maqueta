@@ -1,0 +1,10 @@
+# Solo se envian los archivos necesarios para construir la aplicacion.
+**
+!Dockerfile
+!requirements.txt
+!main.py
+!settings.py
+!templates/
+!templates/**
+!public/
+!public/**
