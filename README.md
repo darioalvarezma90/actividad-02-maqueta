@@ -2,7 +2,13 @@
 
 Sitio académico de **Diseñar para compartir**, desarrollado con FastAPI y Jinja2.
 
-## Publicar en Koyeb (opción principal)
+## Publicar en Koyeb (requiere acceso habilitado)
+
+**Disponibilidad:** Koyeb anunció que las cuentas nuevas requieren un plan de pago.
+La instancia Free documentada no garantiza acceso gratuito para nuevas cuentas.
+Durante la preparación, el panel de esta cuenta mostró únicamente el aviso de
+transición a Mistral, sin opciones para crear servicios. El despliegue está pendiente.
+Referencia: [anuncio oficial](https://www.koyeb.com/blog/koyeb-is-joining-mistral-ai-to-build-the-future-of-ai-infrastructure).
 
 El servicio usa el Dockerfile incluido. FastAPI sirve las seis páginas, el formulario
 y `/assets/`; no necesita Firebase, base de datos ni almacenamiento persistente.
@@ -15,7 +21,7 @@ En Koyeb crea un Web Service desde este repositorio de GitHub con estos valores:
 | Rama | `main` |
 | Builder | Dockerfile |
 | Dockerfile / contexto | `Dockerfile` / raíz del repositorio |
-| Instancia | Free |
+| Instancia | Free, únicamente si la organización ya tiene acceso; no contratar un plan de pago automáticamente |
 | Región | Washington, D.C. (`was`) o Frankfurt (`fra`) |
 | Variable de entorno | `PORT=8080` |
 | Puerto público del servicio | `8080`, protocolo HTTP |
